@@ -33,13 +33,18 @@ If you're starting late or from a non-technical background, you're not behind. Y
 
 **Reality check:** A lot of the job is writing and communication. If you're good at explaining things clearly, that's a real advantage.
 
-## Free resources to build skills
+## Hands on resources for real SOC tools
+
+> **Note:** Some of these resources need a free trial or a cloud account (for example, AWS). Free trials expire, and some services charge after the trial ends. Always check the pricing page and set a billing alert before turning anything on. Practise in a personal or test account, never in a work environment.
 
 | Resource | What it is |
 |---|---|
-| [Splunk Boss of the SOC (BOTS v3)](https://github.com/splunk/botsv3) | Free dataset from real style security incidents to practice investigating |
-| [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team) | Small tests that simulate attacker techniques, mapped to MITRE ATT&CK |
-| [MISP](https://www.misp-project.org/) | Free, open source platform for sharing threat intelligence |
+| [Datadog Learning Center](https://learn.datadoghq.com/) | Free, interactive courses for learning Datadog. The threat detection path covers Cloud SIEM, with hands on investigation in live cloud environments using a free trial account |
+| [AWS GuardDuty sample findings](https://docs.aws.amazon.com/guardduty/latest/ug/sample_findings.html) | Fills your findings list with one sample of each finding type, so you can practise triage without a real attack |
+| [Fortinet Training Institute](https://training.fortinet.com/) | Fortinet's official courses for FortiGate and FortiManager, much of it free and self paced |
+| [Microsoft Learn SC-200: Defender XDR](https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender) | Free path on investigating and fixing threats in Defender XDR, aligned to the SC-200 exam |
+| [Microsoft Learn SC-200: Purview](https://learn.microsoft.com/training/paths/sc-200-mitigate-threats-using-microsoft-purview/) | Free path on using Purview to detect threats and protect sensitive data |
+
 
 ## What I'd tell my past self
 

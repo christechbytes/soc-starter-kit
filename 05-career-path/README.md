@@ -21,7 +21,7 @@ If you're starting late or from a non-technical background, you're not behind. Y
 - **Quiz first.** I take practice questions before reading, so I know what I don't know
 - **Analogies.** I translate every new concept into an everyday comparison
 - **Commute review.** Audio lessons and podcasts during travel time
-- **Hands on beats videos.** Watching someone configure a firewall isn't the same as doing it
+- **Hands on beats videos.** Watching someone configure a firewall isn't the same as doing it yourself
 
 ## What the job looks like day to day
 

@@ -10,6 +10,8 @@ A known malicious IP address probed an RDS database in your account. **No login 
 
 ## Background
 
+> **What is RDS?** Amazon RDS (Relational Database Service) is AWS's managed database service. It runs common databases like MySQL and PostgreSQL for you, so you don't have to build and maintain the servers yourself. Amazon Aurora is AWS's own database engine that also runs under RDS.
+
 GuardDuty RDS Protection watches login activity on supported Amazon RDS and Aurora databases. It compares the source IP against threat intelligence lists of known bad addresses.
 
 This finding is usually a sign of **internet wide scanning**: automated tools probing many databases looking for weak targets. On its own it is rarely a breach, but it tells you something important: **your database may be reachable from the internet.**

@@ -2,8 +2,6 @@
 
 **Severity:** Medium
 
-**Tier:** 1
-
 **Data source:** GuardDuty RDS Protection (RDS login activity monitoring)
 
 ## Description

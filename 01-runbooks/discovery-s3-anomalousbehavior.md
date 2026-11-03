@@ -2,8 +2,6 @@
 
 **Severity:** Low
 
-**Tier:** 1
-
 **Data source:** CloudTrail data events for S3
 
 ## Description

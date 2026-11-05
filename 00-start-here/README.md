@@ -61,6 +61,32 @@ Writing the 5 W's down like this makes it easy to see what you know, what's miss
 
 ## Tips for beginners
 
+## Don't recognize something? Look it up
+
+You'll constantly see signal names, API calls, and terms you don't recognize. That's normal, even for experienced analysts. Nobody memorizes them all.
+
+When something is unfamiliar:
+
+1. **Search the exact name.** For example, search `Discovery:S3/AnomalousBehavior` or `ListObjects AWS`
+2. **Prefer official sources first.** Vendor documentation (AWS, Microsoft, your SIEM vendor) explains what the signal or API actually does
+3. **Get the gist, then apply it.** You don't need to become an expert. Just understand enough to answer: what does this action do, and why might an attacker use it?
+4. **Use what you learned to fill in your 5 W's.** Knowing what an API does often answers the **What** and helps you judge the **Why / How**
+
+Looking things up isn't a weakness. It's a core part of the job.
+
+## Helpful tools
+
+| Tool | What it's for |
+|---|---|
+| [IPinfo](https://ipinfo.io/) | Where an IP is located and who owns it (company, ISP, hosting provider) |
+| [AbuseIPDB](https://www.abuseipdb.com/) | Whether an IP has been reported for malicious activity, like scanning or brute force |
+| [VirusTotal](https://www.virustotal.com/) | Reputation checks for IPs, domains, URLs, and file hashes across many security vendors |
+| [GreyNoise](https://viz.greynoise.io/) | Whether an IP is just scanning the whole internet (background noise) or may be targeting you |
+| [MITRE ATT&CK](https://attack.mitre.org/) | A library of attacker techniques. Helps explain why an attacker might take an action |
+| [AWS GuardDuty finding types](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types.html) | Official explanations of every GuardDuty finding |
+
+> **Careful what you paste.** These are public websites. Looking up a public IP is fine, but never paste internal IPs, usernames, company names, or upload files from work. Anything uploaded to VirusTotal can be visible to other users. Search by file hash instead, and follow your company's rules.
+
 - **Start with Who.** Knowing who did something answers half the question
 - **Context beats severity.** A Low severity signal on a sensitive system can matter more than a Medium on a test system
 - **Write as you go.** Notes made during an investigation are easier than reconstructing later

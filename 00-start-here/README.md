@@ -98,6 +98,7 @@ Looking things up isn't a weakness. It's a core part of the job.
 |---|---|
 | [Investigation Notes](investigation-notes-template.md) | Recording your work on any alert using the 5 W's |
 | [Escalation Message](escalation-message-template.md) | Handing an alert to Tier 2 clearly |
+| [User Confirmation](user-confirmation-template.md) | Asking a user to confirm whether an action was theirs |
 
 ## Next steps
 

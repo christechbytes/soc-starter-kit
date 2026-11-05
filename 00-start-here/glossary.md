@@ -4,7 +4,7 @@ Plain language definitions of terms used in this repo, in alphabetical order.
 
 | Term | Meaning |
 |---|---|
-| **Access key** | A credential that lets a user or program connect to AWS without a password. If stolen, an attacker can act as that user |
+| **Access key** | A credential that lets a user or program connect to AWS without a password. If stolen, an attacker can act as that user. The first four letters show what type it is. See [AWS key and ID prefixes](#aws-key-and-id-prefixes) below |
 | **Alert / Signal / Finding** | A notification that something happened that may need investigating. Different tools use different names for the same idea |
 | **Anomaly** | Activity that's unusual compared to normal behavior. Not automatically bad, but worth checking |
 | **API / API call** | A request one program sends to another to do something, like "list these files." In AWS, almost every action is an API call |
@@ -46,3 +46,34 @@ Plain language definitions of terms used in this repo, in alphabetical order.
 | **True positive: benign** | The activity really happened, but it's expected or approved |
 | **True positive: malicious** | The activity really happened and it's harmful |
 | **VPN (Virtual Private Network)** | An encrypted connection, often used to reach a company network remotely |
+
+
+
+
+## AWS key and ID prefixes
+
+In AWS, the first four characters of a key or ID tell you what type it is. This helps during triage, especially when a finding shows an access key.
+
+### Access keys
+
+| Prefix | What it is | Lasts | Why it matters in triage |
+|---|---|---|---|
+| **AKIA** | Long term access key, tied to an IAM user | Until someone deletes or rotates it | If stolen, it keeps working until it's disabled. Treat suspicious AKIA activity urgently |
+| **ASIA** | Temporary access key, created by AWS STS (Security Token Service), often when someone assumes a role or signs in through single sign on | A limited time, then it expires | Look at **who or what created the session**. The source identity matters more than the key itself |
+
+### Other IDs you may see
+
+| Prefix | What it identifies |
+|---|---|
+| **AIDA** | An IAM user |
+| **AROA** | An IAM role |
+| **AGPA** | An IAM user group |
+| **AIPA** | An EC2 instance profile (lets a server use a role) |
+
+### Quick triage tip
+
+- **AKIA in a suspicious finding:** ask whether that user should even have a long term key. Many companies try to avoid them
+- **ASIA in a suspicious finding:** find the role or user behind the session, then investigate that identity
+- **Expiry isn't safety.** A temporary key can still do damage before it expires
+
+Full list: [AWS IAM identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html)

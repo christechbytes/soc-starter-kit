@@ -61,6 +61,11 @@ Writing the 5 W's down like this makes it easy to see what you know, what's miss
 
 ## Tips for beginners
 
+- **Start with Who.** Knowing who did something answers half the question
+- **Context beats severity.** A Low severity signal on a sensitive system can matter more than a Medium on a test system
+- **Write as you go.** Notes made during an investigation are easier than reconstructing later
+- **Escalating isn't failing.** If something doesn't add up, pass it on with your notes
+
 ## Don't recognize something? Look it up
 
 You'll constantly see signal names, API calls, and terms you don't recognize. That's normal, even for experienced analysts. Nobody memorizes them all.
@@ -87,10 +92,12 @@ Looking things up isn't a weakness. It's a core part of the job.
 
 > **Careful what you paste.** These are public websites. Looking up a public IP is fine, but never paste internal IPs, usernames, company names, or upload files from work. Anything uploaded to VirusTotal can be visible to other users. Search by file hash instead, and follow your company's rules.
 
-- **Start with Who.** Knowing who did something answers half the question
-- **Context beats severity.** A Low severity signal on a sensitive system can matter more than a Medium on a test system
-- **Write as you go.** Notes made during an investigation are easier than reconstructing later
-- **Escalating isn't failing.** If something doesn't add up, pass it on with your notes
+## Templates
+
+| Template | Use it for |
+|---|---|
+| [Investigation Notes](investigation-notes-template.md) | Recording your work on any alert using the 5 W's |
+| [Escalation Message](escalation-message-template.md) | Handing an alert to Tier 2 clearly |
 
 ## Next steps
 

@@ -68,6 +68,6 @@ Security Operations
 
 Whatever the answer, note it in your [Investigation Notes](investigation-notes-template.md):
 
-- Who you contacted, how, and when
+- Who you contacted, how, and when (if it is a chat message or email, you can include a screenshot of the response)
 - What they said, in their words if possible
 - If no response, when you followed up and who you escalated to

@@ -22,6 +22,7 @@ A runbook is a step by step guide for handling a specific security alert. It tel
 |---|---|---|
 | [Discovery:RDS/MaliciousIPCaller](discovery-rds-maliciousipcaller.md) | Amazon RDS | Medium |
 | [Discovery:S3/AnomalousBehavior](discovery-s3-anomalousbehavior.md) | Amazon S3 | Low |
+| [Exfiltration:S3/AnomalousBehavior](exfiltration-s3-anomalousbehavior.md) | Amazon S3 | High |
 
 More runbooks are added as they're finished.
 

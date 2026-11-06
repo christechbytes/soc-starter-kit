@@ -4,7 +4,7 @@
 
 ## About me
 
-I'm Christine, a Cybersecurity analyst based in Barbados. I spent 13 years in another career before moving into cybersecurity through a certificate program and a internship. I built this repo for people who are where I was not long ago: curious, motivated, and unsure where to start.
+I'm Christine, a Cybersecurity analyst based in Barbados. I spent 13 years in another career before moving into cybersecurity through a certificate program and an internship. I built this repo for people who are where I was not long ago: curious, motivated, and unsure where to start.
 
 **Certifications:** CompTIA Security+ (2025), CompTIA Network+ (2026), Microsoft Azure Fundamentals AZ-900 (2026)
 

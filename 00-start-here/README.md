@@ -59,6 +59,26 @@ A `Discovery:S3/AnomalousBehavior` finding arrives:
 
 Writing the 5 W's down like this makes it easy to see what you know, what's missing, and what to include if you escalate.
 
+## Triage flowchart
+
+```mermaid
+flowchart TD
+    A["Signal arrives"] --> B["Read the alert details"]
+    B --> C["Answer the 5 W's: Who, What, Where, When, Why / How"]
+    C --> D{"Can you answer all 5?"}
+    D -- No --> E["Look it up, check related signals, contact the user or owner"]
+    E --> D
+    D -- Yes --> F{"Is the activity expected or approved?"}
+    F -- Yes --> G["True positive: benign<br>Close and document"]
+    F -- No --> H{"Did the tool get it wrong?"}
+    H -- Yes --> I["False positive<br>Close, document, suggest tuning"]
+    H -- No --> J["True positive: malicious or unconfirmed<br>Escalate to Tier 2"]
+```
+
+**How to read it:** rectangles are steps, diamonds are questions. Follow the arrow that matches your answer.
+
+> **High severity shortcut:** if a High severity alert can't be confirmed quickly, skip ahead and escalate. Don't wait on the loop.
+
 ## Tips for beginners
 
 - **Start with Who.** Knowing who did something answers half the question

@@ -19,9 +19,22 @@ A SOC uses AWS GuardDuty to detect threats and sends its findings to Datadog, th
 
 Before you can find a break, you need to know the chain. In Datadog's documented setup, GuardDuty findings travel like this:
 
-GuardDuty → EventBridge rule → Datadog Forwarder (Lambda) → Datadog
-(detects) (catches findings) (ships them) (shows them)
+```mermaid
+flowchart LR
+    A["GuardDuty<br>Detects threats"] --> B["EventBridge rule<br>Catches findings"]
+    B --> C["Datadog Forwarder<br>Lambda function<br>Ships findings"]
+    C --> D["Datadog<br>Shows findings"]
 
+    A -.- A1["Check: Is GuardDuty enabled<br>and creating findings?"]
+    B -.- B1["Check: Does the rule exist<br>and is it enabled?"]
+    C -.- C1["Check: Is the trigger attached<br>and running without errors?"]
+    D -.- D1["Check: Are findings filtered<br>or labeled differently?"]
+
+    style B stroke:#d33,stroke-width:3px
+    style B1 stroke:#d33,stroke-width:3px
+```
+
+> The **red outline** marks the suspected break in this investigation: a disabled EventBridge rule. Solid arrows show how findings travel. Dotted lines show what to check at each step.
 
 | Link | What it does |
 |---|---|

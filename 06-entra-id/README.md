@@ -46,14 +46,7 @@ These appear in the sign in log's authentication details. They aren't all errors
 
 ## IP reputation tags
 
-IP reputation tools label IPs with tags. These are **not** Entra error codes. They come from whichever enrichment tool your team uses, and names differ between tools.
-
-| Example tag | Meaning | How to read it |
-|---|---|---|
-| PROXY | IP linked to proxy infrastructure | Traffic may be routed through a middleman, hiding the real source |
-| CALLBACK_PROXY | IP linked to callback proxy infrastructure | Possible proxy based routing. Check the source further |
-| AD_FRAUD | IP linked to advertising fraud | Shady traffic, but not proof of account compromise |
-| anonymous: false | Not flagged as anonymous | Doesn't prove the IP is safe or residential |
+Sign in investigations often involve tags like PROXY, CALLBACK_PROXY, or TUNNEL. These come from IP reputation tools, not Entra. See [Proxies, VPNs, and Tor](../00-start-here/proxies-vpns-and-tor.md).
 
 ## Files in this folder
 

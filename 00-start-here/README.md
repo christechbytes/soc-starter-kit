@@ -109,10 +109,14 @@ Looking things up isn't a weakness. It's a core part of the job.
 | [AbuseIPDB](https://www.abuseipdb.com/) | Whether an IP has been reported for malicious activity, like scanning or brute force |
 | [VirusTotal](https://www.virustotal.com/) | Reputation checks for IPs, domains, URLs, and file hashes across many security vendors |
 | [GreyNoise](https://viz.greynoise.io/) | Whether an IP is just scanning the whole internet (background noise) or may be targeting you |
+| [Spur](https://spur.us/) | Whether an IP is a VPN, proxy, residential proxy, or Tor, and which service it belongs to |
+| [dan.me.uk Tor node list](https://www.dan.me.uk/tornodes) | Check whether an IP is a Tor exit node |
 | [MITRE ATT&CK](https://attack.mitre.org/) | A library of attacker techniques. Helps explain why an attacker might take an action |
 | [AWS GuardDuty finding types](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types.html) | Official explanations of every GuardDuty finding |
 
 > **Careful what you paste.** These are public websites. Looking up a public IP is fine, but never paste internal IPs, usernames, company names, or upload files from work. Anything uploaded to VirusTotal can be visible to other users. Search by file hash instead, and follow your company's rules.
+
+> **Seeing VPNs, proxies, or Tor in an alert?** Read [Proxies, VPNs, and Tor](proxies-vpns-and-tor.md).
 
 ## Templates
 

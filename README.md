@@ -24,6 +24,7 @@ I'm Christine, a Cybersecurity analyst based in Barbados. I spent 13 years in an
 | [03 Firewall Alerts for SOC Analysts](03-firewall-alerts/) | What firewall logs tell you and how to triage common firewall alerts |
 | [04 Troubleshooting](04-troubleshooting/) | A real world style lesson: what to do when security alerts stop arriving |
 | [05 Career Path](05-career-path/) | My certification order, study tips, and what the job looks like day to day |
+| [06 Entra ID Sign Ins](06-entra-id/) | How to read Microsoft Entra ID sign in events and common error codes |
 
 
 ## Important note

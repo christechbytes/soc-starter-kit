@@ -89,7 +89,7 @@ GuardDuty findings arrive in most SIEMs as JSON (structured text). Field names c
 
 ### Example search (Datadog)
 
-Queries depend on how your company sends GuardDuty into Datadog, so check with your team before relying on these. Two starting points:
+See [Searching your SIEM](README.md#searching-your-siem) before using these.
 
 **Search every field for the user:**
 ```
@@ -100,12 +100,6 @@ Queries depend on how your company sends GuardDuty into Datadog, so check with y
 ```
 source:guardduty *:demo-reporting-user
 ```
-
-**Tip:** Find one known GuardDuty finding in your Log Explorer and look at its tags and fields. That shows you how your environment labels them.
-
-> **Note:** S3 object level activity comes from CloudTrail data events, which not every company sends to its SIEM. If you can't find the underlying activity in your SIEM, check the GuardDuty console or ask your cloud team.
-
-> **Note:** This example uses Datadog, the SIEM I've worked with. I haven't used Splunk or other SIEMs yet, so I've left those out rather than guess. Contributions with examples for other SIEMs are welcome.
 
 ## Triage and Response
 

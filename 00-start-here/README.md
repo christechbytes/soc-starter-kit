@@ -2,6 +2,8 @@
 
 New to security monitoring? Read this before opening any runbook.
 
+> **New terms?** Check the [Glossary](glossary.md) anytime.
+
 ## What is a signal?
 
 A **signal** (also called an alert or finding) is a notification that something happened that might be worth a look. Security tools watch huge amounts of activity, like logins, file access, and network traffic, and raise a signal when something matches what they're looking for.

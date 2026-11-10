@@ -38,3 +38,9 @@ All examples use fictional companies, IP addresses, and account IDs. Nothing her
 ## Status
 
 This repo is a work in progress. New sections are added as they're finished.
+
+
+
+## License
+
+This work is dedicated to the public domain under [CC0 1.0](LICENSE). Use it, adapt it, and share it freely.

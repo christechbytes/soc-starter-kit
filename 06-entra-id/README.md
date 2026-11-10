@@ -61,6 +61,9 @@ IP reputation tools label IPs with tags. These are **not** Entra error codes. Th
 |---|---|
 | [Error Codes](error-codes.md) | Common sign in error codes, checked against Microsoft's documentation |
 
+## Related runbooks
+
+- [Impossible Travel / Atypical Travel](../01-runbooks/impossible-travel.md)
 
 ## References
 

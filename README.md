@@ -19,7 +19,7 @@ I'm Christine, a Cybersecurity analyst based in Barbados. I spent 13 years in an
 | Section | What you'll find |
 |---|---|
 | [00 Start Here](00-start-here/) | What signals are, why they trigger, and how to investigate using the 5 W's |
-| [01 Runbooks](01-runbooks/) | Step by step triage guides for common AWS GuardDuty findings |
+| [01 Runbooks](01-runbooks/) | Step by step triage guides for AWS GuardDuty findings and Microsoft Entra ID sign in alerts |
 | [02 Change Management](02-change-management/) | Blank change log and change request templates, plus why auditors care |
 | [03 Firewall Alerts for SOC Analysts](03-firewall-alerts/) | What firewall logs tell you and how to triage common firewall alerts |
 | [04 Troubleshooting](04-troubleshooting/) | A real world style lesson: what to do when security alerts stop arriving |

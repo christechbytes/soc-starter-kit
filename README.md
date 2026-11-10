@@ -33,7 +33,7 @@ All examples use fictional companies, IP addresses, and account IDs. Nothing her
 
 ## Connect
 
-www.linkedin.com/in/christine-alert-0572b340
+[Connect with me on LinkedIn](https://www.linkedin.com/in/christine-alert-0572b340)
 
 ## Status
 

@@ -77,7 +77,7 @@ GuardDuty findings arrive in most SIEMs as JSON (structured text). Field names c
 
 ### Example search (Datadog)
 
-Queries depend on how your company sends GuardDuty into Datadog, so check with your team before relying on these. Two starting points:
+See [Searching your SIEM](README.md#searching-your-siem) before using these.
 
 **Search every field for the IP:**
 ```
@@ -88,14 +88,6 @@ Queries depend on how your company sends GuardDuty into Datadog, so check with y
 ```
 source:guardduty *:203.0.113.45
 ```
-
-**Why these may differ at your company:**
-- GuardDuty can reach Datadog through different routes (for example the Datadog Forwarder or Amazon Kinesis Firehose), and each can label logs differently
-- Your team may use custom pipelines that rename fields or tags
-
-**Tip:** Find one known GuardDuty finding in your Log Explorer and look at its tags and fields. That shows you how your environment labels them, and you can build queries from there.
-
-> **Note:** This example uses Datadog, the SIEM I've worked with. I haven't used Splunk or other SIEMs yet, so I've left those out rather than guess. If you use a different SIEM, the same approach applies: search for the IP and look for related findings. Contributions with examples for other SIEMs are welcome.
 
 ## Triage and Response
 

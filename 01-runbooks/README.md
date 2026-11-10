@@ -27,6 +27,15 @@ A runbook is a step by step guide for handling a specific security alert. It tel
 
 More runbooks are added as they're finished.
 
+## Searching your SIEM
+
+Each runbook shows example Datadog searches. Before relying on them:
+
+- **Queries depend on your setup.** GuardDuty can reach Datadog through different routes (for example the Datadog Forwarder or Amazon Kinesis Firehose), and each can label logs differently. Your team may also use custom pipelines that rename fields or tags
+- **Start from a known finding.** Open one GuardDuty finding in your Log Explorer and look at its tags and fields. Build your searches from there
+- **Some activity may be missing.** S3 object level activity comes from CloudTrail data events, which not every company sends to its SIEM. Runtime findings may not be forwarded either. If you can't find something, check the GuardDuty console or ask your cloud team
+- **Other SIEMs:** I've only worked with Datadog, so I've left other SIEMs out rather than guess. The approach is the same: search for the IP or user and look for related findings. Contributions are welcome
+
 ## Before you use these
 
 - All examples use fictional data

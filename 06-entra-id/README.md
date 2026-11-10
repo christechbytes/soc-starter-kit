@@ -60,7 +60,7 @@ IP reputation tools label IPs with tags. These are **not** Entra error codes. Th
 | File | What it is |
 |---|---|
 | [Error Codes](error-codes.md) | Common sign in error codes, checked against Microsoft's documentation |
-| [Needs Verification](needs-verification.md) | Codes I've seen but couldn't confirm. Don't rely on these |
+
 
 ## References
 

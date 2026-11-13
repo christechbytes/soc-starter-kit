@@ -24,6 +24,7 @@ A runbook is a step by step guide for handling a specific security alert. It tel
 | [Discovery:S3/AnomalousBehavior](discovery-s3-anomalousbehavior.md) | Amazon S3 | Low |
 | [Exfiltration:S3/AnomalousBehavior](exfiltration-s3-anomalousbehavior.md) | Amazon S3 | High |
 | [Impossible Travel / Atypical Travel](impossible-travel.md) | Microsoft Entra ID | Varies |
+| [SCP Deleted](scp-deleted.md) | AWS Organizations | Varies |
 
 More runbooks are added as they're finished.
 

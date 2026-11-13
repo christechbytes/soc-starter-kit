@@ -12,6 +12,7 @@ Plain language definitions of terms used in this repo, in alphabetical order.
 | **Baseline** | What normal activity looks like for a user, system, or network |
 | **Bucket** | A container for storing files in Amazon S3 |
 | **C2 (Command and Control)** | Servers attackers use to send instructions to infected devices |
+| **Control Tower** | An AWS service that sets up and governs multi account environments using security rules called controls |
 | **Change log** | A record of approved changes to systems. Used to check if a change was expected |
 | **CloudTrail** | An AWS service that records actions taken in an AWS account |
 | **Detection rule** | Logic that tells a security tool what to alert on |
@@ -30,11 +31,13 @@ Plain language definitions of terms used in this repo, in alphabetical order.
 | **Lambda** | An AWS service that runs small pieces of code without needing a server |
 | **Log** | A record of an event, like a login or file access |
 | **MITRE ATT&CK** | A public library of attacker techniques, used to understand and describe attacks |
+| **OU (Organizational Unit)** | A group of AWS accounts inside an organization, used to apply the same rules to all of them |
 | **Pipeline** | The chain of services that moves logs or alerts from one place to another |
 | **Policy (firewall)** | A rule that decides whether network traffic is allowed or blocked |
 | **RDS (Relational Database Service)** | AWS's managed database service |
 | **Runbook** | A step by step guide for handling a specific alert |
 | **S3 (Simple Storage Service)** | AWS's file storage service |
+| **SCP (Service Control Policy)** | A policy that sets the maximum permissions for accounts in an AWS organization. It limits access but never grants it |
 | **Severity** | How serious a tool rates an alert, often Low, Medium, High, or Critical |
 | **SIEM** | A tool that collects logs and alerts from many sources in one place so analysts can search and investigate. Examples include Datadog and Splunk |
 | **SOC (Security Operations Center)** | The team that monitors for and responds to security threats |
